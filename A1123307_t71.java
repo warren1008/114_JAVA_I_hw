@@ -35,6 +35,24 @@ public class A1123307_t71{
         scn.close();
     }
     
+    //最小公倍數函數
+    public static int lcm(int a, int b){
+        //先比較兩數字大小
+        int max = a;
+            if(b > a){
+                max = b;
+            }
+        //利用無窮迴圈找出最小公倍數
+        while(true){
+            
+            
+            if(max % a == 0 && max % b == 0){
+                return max;
+            }
+            max++;
+        }
+    }
+
     //最大公因數函數
     public static int gcd(int a, int b){
     //先比較兩數字大小
@@ -52,20 +70,6 @@ public class A1123307_t71{
         return  temp; 
     }
 
-    //最小公倍數函數
-    public static int lcm(int a, int b){
-        //先比較兩數字大小
-        int max = a;
-        if(b > a){
-            max = b;
-        }
-        //利用無窮迴圈找出最小公倍數
-        while(true){
-            if(max % a == 0 && max % b == 0){
-                return max;
-                break;
-            }
-        }
-    }
-
+    
+    
 }
